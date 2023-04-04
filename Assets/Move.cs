@@ -18,6 +18,7 @@ public class Move : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            agent.
             RaycastHit hit;
             if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity))
             {
@@ -30,6 +31,7 @@ public class Move : MonoBehaviour
                 endPoint.SetActive(true);
             }
         }
+
 
         lineRenderer.SetPosition(0, transform.position);
 
